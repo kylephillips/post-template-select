@@ -20,6 +20,7 @@ class Bootstrap
 	public function init()
 	{
 		new PostMeta\PostMeta;
+		new TemplateFilter\TemplateFilter;
 	}
 
 	/**
