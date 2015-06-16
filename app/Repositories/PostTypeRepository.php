@@ -10,8 +10,10 @@ class PostTypeRepository
 	*/
 	public function getAll()
 	{
-		return get_post_types(array(
+		$types = get_post_types(array(
 			'public' => true
 		));
+		unset($types['page']);
+		return $types;
 	}
 }
